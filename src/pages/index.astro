@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/Section.astro";
+import presentation from "../data/presentation";
+import projects from "../data/projects";
+import ProjectCard from "../components/ProjectCard.astro";
+---
+
+<Layout title="Slimane Sedrati | Software engineer and a web developer">
+  <div class="mb-10 space-y-3">
+    <h1 class="text-3xl">{presentation?.title}</h1>
+    <p class="text-gray-400 max-w-[500px]">
+      {presentation?.description}
+    </p>
+    <ul class="flex space-x-3 text-xs text-gray-400">
+      {
+        presentation.social.map((item) => (
+          <li>
+            <a
+              href={item.url}
+              target="_blank"
+              class="hover:text-white duration-300"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <Section title={`Selected Projects (${projects.length})`}>
+    <div class="grid gap-y-3">
+      {
+        projects.map((project) => (
+          <ProjectCard
+            title={project.title}
+            url={project.url}
+            tags={project.tags}
+          />
+        ))
+      }
+    </div>
+  </Section>
+</Layout>

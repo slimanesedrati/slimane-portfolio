@@ -1,0 +1,33 @@
+---
+import presentation from "../data/presentation";
+import Section from "./Section.astro";
+---
+
+<footer>
+  <div class="container py-10">
+    <Section title="Get in touch">
+      <p class="mb-3 text-gray-400">
+        Email me at
+        <a
+          class="font-semibold hover:text-white transition ease"
+          href={`mailto:${presentation.mail}`}>{presentation.mail}</a
+        > or follow me via my social links.
+      </p>
+      <ul class="flex space-x-3 text-gray-400 text-xs">
+        {
+          presentation.social.map((item) => (
+            <li>
+              <a
+                href={item.url}
+                target="_blank"
+                class="hover:text-white duration-300"
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </Section>
+  </div>
+</footer>
