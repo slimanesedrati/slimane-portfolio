@@ -12,21 +12,7 @@ import ProjectCard from "../components/ProjectCard.astro";
     <p class="text-gray-400 max-w-[500px]">
       {presentation?.description}
     </p>
-    <ul class="flex space-x-3 text-xs text-gray-400">
-      {
-        presentation.social.map((item) => (
-          <li>
-            <a
-              href={item.url}
-              target="_blank"
-              class="hover:text-white duration-300"
-            >
-              {item.label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+    
   </div>
   <Section title={`Selected Projects (${projects.length})`}>
     <div class="grid gap-y-3">
