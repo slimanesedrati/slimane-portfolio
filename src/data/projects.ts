@@ -7,7 +7,7 @@ type ProjectType = {
 const projects: ProjectType[] = [
   {
     title: "Autorent",
-    url: "https://github.com/slimanesedrati/CarRental",
+    url: "https://github.com/daishek/CarRental",
     tags: ["Python", "Django", "Bootstrap"],
   },
   {
