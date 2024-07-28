@@ -6,9 +6,9 @@ type ProjectType = {
 
 const projects: ProjectType[] = [
   {
-    title: "Autorent",
-    url: "https://github.com/daishek/CarRental",
-    tags: ["Python", "Django", "Bootstrap"],
+    title: "ttrigg",
+    url: "https://github.com/slimanesedrati/rental-frontend",
+    tags: ["NextJs", "TypeScript", "TailwindCSS", "Shadcn UI"],
   },
   {
     title: "Job portal",
