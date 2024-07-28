@@ -13,7 +13,7 @@ type PresentationType = {
 const presentation: PresentationType = {
   title: "Hi, I'am Slimane",
   description:
-    "Enthusiastic software engineering student and front-end developer from Algeria, deeply engaged in the world of NextJS, TypeScript, and IoT. Curious about AI and ML, I'm passionate about creating amazing web experiences and exploring the potential of IoT. Let's collaborate to craft exceptional web and IoT solutions! 🚀💫🌐",
+    "Full-Stack Developer with expertise in React, Next.js, Django, and TypeScript. Proven ability to deliver robust web solutions, including a car rental platform and a job portal. Skilled in Agile methodologies, problem-solving, and teamwork. Dedicated to continuous learning and delivering high-quality software.",
   mail: "slimane.sedrati@outlook.com",
   social: [
     { label: "Github", url: "https://github.com/Slimanesedrati" },
